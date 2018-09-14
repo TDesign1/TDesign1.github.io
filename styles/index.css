@@ -201,7 +201,7 @@ a:hover{
  height: auto;
  
  background-color: white;
- padding-bottom: 50px;
+ padding-bottom: 30px;
  border-bottom: 2px solid black;
  margin: 0 15px 0 15px;
  
@@ -209,12 +209,12 @@ a:hover{
 
 .aboutmetitle {
   margin-right: 100px;
-  padding-top: 50px;
+  padding-top: 40px;
   color: rgb(179, 15, 15);  
   text-align: end; 
   font-weight: 200;
   font-style: normal;
-  font-size: 65px;
+  font-size: 50px;
   letter-spacing: .1em;
   line-height: 1.2em;
   font-family: 'Dancing Script';
