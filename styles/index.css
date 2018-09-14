@@ -201,7 +201,7 @@ a:hover{
  height: auto;
  
  background-color: white;
- padding-bottom: 80px;
+ padding-bottom: 50px;
  border-bottom: 2px solid black;
  margin: 0 15px 0 15px;
  
@@ -316,7 +316,7 @@ a:hover{
 }
 
 .gallery {
-  padding-top: 25px;
+  padding-top: 15px;
   background-color: white;    
    text-align: center;  
   margin: 0 15px 0 15px;  
@@ -352,6 +352,8 @@ display:block;
   
   
 }
+
+/*services*/
 
 .services {
   background-color: white;
