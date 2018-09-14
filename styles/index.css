@@ -1,0 +1,577 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family:'Karla', sans-serif;  
+}
+
+body {
+  background-color: white;
+  
+ }
+
+ h1 {}
+
+
+
+html, body {
+     width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {  
+  height: 590px;
+  margin-bottom: 79px;
+  
+}
+
+
+#logo {
+  margin: 10px 0px 0px 10px;  
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+  cursor: pointer; 
+  float: left;
+  }
+
+#logo:hover {
+   
+}
+
+#name {
+  float:left;
+  color: white;
+  font-size: 1.5em; 
+  margin-top: 20px;
+  margin-left: 13px;
+}
+
+#bg{
+  
+  display:block;
+  z-index: -1;
+  background: url("../images/header.jpg") fixed no-repeat;
+  height: 670px;  
+  width: auto;
+  background-size: cover;      
+    }
+
+nav {
+    float: right;
+    white-space: nowrap;
+   line-height: 1em;
+   margin-right: 12px;
+   margin-top: 25px;
+ 
+}
+
+
+.navlinks, #shop{
+    text-decoration: none;
+    color: #FCFCFC;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;   
+    padding: 7px;     
+    
+}
+
+a:hover{
+    color: #92140C;    
+}
+
+.title{  
+  margin-top: 170px;
+  margin-left: 68px;
+  float: left;
+  clear: left;
+  font-size: 100px;
+  line-height: 1.1;
+  color:#FCFCFC;
+  font-weight: bold;
+  font-family: Karla;
+  text-shadow: 1px 1px 1px #000;
+  padding-bottom: 170px;
+}
+ .scrolldown{  
+   color: black;
+   
+   
+    }
+
+ 
+
+ #scroll {
+  transform: scale(1.2);
+  animation: bounce 2s infinite 2s; 
+  cursor: pointer;    
+  width: 50%;
+  font-size: 3em;  
+  color: white;      
+  float: right;  
+  clear: left;
+  padding-left: 30%;
+ }
+
+
+/*BREAK*/
+
+.break {
+  width: auto;
+  height: 2px;
+  background-color: rgb(5, 5, 5);
+ 
+}
+/*
+.breaknavs {
+  padding-top: 15px;
+  font-size: 2.5em;
+  
+}
+*/
+
+/* 
+}
+
+#scroll:hover{
+  transform: scale(1.4);
+
+}
+*/
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: scale(1.2) translateY(0);
+    
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: scale(1.2) translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: scale(1.2) translateY(-5px);
+  }
+}
+/*
+.contactelle{
+  color: black;
+  font-family: 'Open Sans';
+  font-size: 2em; 
+  padding-top: 18px;  
+}
+
+.socialmedia {
+  margin-left: 55px;
+  display: grid;
+  grid-template-columns: 5% 5% 5% 5% 55% 20%;
+  text-align: center;
+   
+}
+
+.socialmedia a{
+  color: black;
+}
+
+.socialmedia a:hover{
+  color:#92140C;
+
+}
+*/
+
+.aboutbrief {
+ height: auto;
+ 
+ background-color: white;
+ padding-bottom: 80px;
+ border-bottom: 2px solid black;
+ margin: 0 15px 0 15px;
+ 
+  }
+
+.aboutmetitle {
+  padding-left: 30px;
+  padding-top: 35px;
+  color: rgb(179, 15, 15);  
+  text-align: center; 
+  font-weight: 200;
+  font-style: normal;
+  font-size: 65px;
+  width: 100%;
+   letter-spacing: .1em;
+  line-height: 1.2em;
+  font-family: 'Dancing Script';
+}
+
+#aboutme{
+  display: block;
+  text-align: right;
+  height: auto;  
+  padding: 20px;
+  padding-bottom: 0px;
+  margin: -40px 68px 30px 68px; 
+  font-family: 'Open Sans';
+  font-size: 1em;
+  line-height: 2;
+  color: rgb(53, 53, 53);
+  
+  
+}
+
+.logoabout{
+  float: left;
+  margin-right: 68px;
+  margin-left: 68px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 0px;  
+}
+
+#instaabout:hover{
+  color: pink;
+}
+
+#checkout {
+  padding: 30px;
+  text-align:center;
+  margin-left: 20px;
+}
+
+.sites{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;  
+  text-align: center;
+}
+
+.etsysite, .rbsite{ 
+  display: inline-block;
+  width: 175px;
+  height: 50px;
+  margin: auto; 
+  margin-left: 20px;
+  border: 1px solid rgb(255, 157, 157); 
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle; 
+  line-height: 50px;
+  background-color: rgb(247, 247, 247);
+  color: black;
+  transition: 0.5s background-color;
+}
+
+.etsysite:hover, .rbsite:hover{
+  background-color: rgb(255, 157, 157);
+  color: black;
+  
+
+}
+
+.captivate{
+  background: url("../images/ipadbg.jpg") fixed no-repeat;
+  display:block;
+  padding-bottom: 0px;  
+   z-index: -1;
+   height: 390px;   
+   background-size: cover;
+   width: auto;
+  }
+
+
+
+/* GALLERY */
+
+#portfolio{  
+  font-family: 'Raleway';
+  color: #4c5871;  
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px; 
+  font-weight: 200;
+  font-style: normal;
+  font-size: 50px;
+   letter-spacing: .1em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.gallery {
+  padding-top: 25px;
+  background-color: white;    
+   text-align: center;  
+  margin: 0 15px 0 15px;  
+  border-top: 2px solid black;
+  padding-bottom: 25px;
+  border-bottom: 2px solid black;
+ 
+}
+
+.gallery img{
+  width: 280px;
+  height: 250px;
+  padding: 0px;
+  transition: 0.2s;
+  transform: scale(0.7);
+  margin: auto;
+  border: solid 1px black;
+}
+
+.gallery img:hover{
+  
+  transform: scale(0.8);
+}
+
+.calligraphy {
+  width: auto;
+background: url("../images/calligraphy.jpg") fixed no-repeat;
+display:block;
+  position: relative;
+  z-index: -1;
+  height: 390px;
+  background-size: cover;
+  
+  
+}
+
+.services {
+  background-color: white;
+  margin: 0px 15px 0 15px;
+  border-bottom: 2px solid black;
+}
+
+.servicestitle {
+  padding: 60px;
+  color: #4c5871;  
+  margin: auto;
+  text-align: center;
+  font-family: 'Dancing Script';
+  font-size: 65px;
+  border-top: 2px solid black;
+  font-weight: 1.5;
+  
+  
+}
+
+
+
+.column {  
+  flex: 33%; 
+  max-width: 100%;
+  padding: 0 0px;
+  padding-bottom: 60px;
+  text-align: center;  
+  margin-bottom: 15px;
+  margin-right: 45px;
+    
+}
+
+.column img{  
+  height: 225px;
+  width: 245px;  
+  border: solid 1px rgba(216, 216, 216, 0.452);
+}
+.column a {
+  margin-left: 50px;
+}
+
+.column img:hover{
+  transform: scale(1.1);
+}
+
+.column img:first-child{
+  margin-left: 0px;
+  border: solid 1px rgba(216, 216, 216, 0.452);
+  
+}
+
+.buttondiv {
+  display: block;
+  width: 1000px;
+  height: 150px;
+  text-align: center;  
+}
+
+.contactbutton { 
+  display: inline-block;
+  border: 1px solid rgb(255, 157, 157);
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+  width: 275px;
+  height: 75px;
+  line-height: 75px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: black;
+  transition: 0.5s background-color;
+  }
+
+  .contactbutton:hover {
+  background-color: rgb(255, 157, 157);
+  color: black;
+  }
+
+/* IPAD BG */
+
+.ipadbg {   
+    width: auto;
+    background: url("../images/captivate2.jpg") fixed center no-repeat;
+    display:block;
+    position: relative;
+    z-index: -1;
+    height: 390px;
+    background-size: 900px 500px;    
+}
+
+#border1 {
+  width: auto;
+  height: 2px;
+  background-color: rgb(5, 5, 5);
+  margin: 0 15px 0 15px;
+}
+
+/* TESTIMONIES */
+
+#testimonytitle{
+  
+  padding: 30px;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: 'Karla';
+  
+}
+
+.testbg {
+  background-color: white;
+}
+
+.testimonies{ 
+  margin: auto;
+  padding: 20px;
+  background-color: transparent;
+  max-width: 600px;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  margin: 10px 10px 0;
+  background: #6e7376;
+  padding: 20px 60px;
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  font-style: italic;
+  color: #FCFCFC;
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+  content: "\201C";
+  position: absolute;
+  font-size: 80px;
+  line-height: 1;
+  color: #FCFCFC;
+  font-style: normal;
+}
+
+.testimonial blockquote:before {
+  top: 0;
+  left: 10px;
+}
+
+.testimonial blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -0.5em;
+}
+
+.testimonial div {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #6e7376;
+  margin: 0 0 0 60px;
+}
+
+.testimonial p {
+  margin: 8px 0 0 20px;
+  text-align: left;
+  padding-bottom: 5px;
+  color: #6e7376;
+  font-weight: bold;
+}
+
+/*FOOTER*/
+
+
+footer{
+  height: 60px;
+  width: auto;
+  background-color: rgb(46, 46, 46);
+  border-top: solid 1px black;
+  margin-top: 30px;
+  
+}
+
+.footericons{ 
+  
+}
+
+.footericons a{
+  color: white;
+  display: inline;
+  font-size: 2em;  
+  float: left;  
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+#footercontact a{
+  float: right;
+  padding-right: 20px;
+  padding-top: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Open Sans'
+}
+
+.footericons a:hover{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
