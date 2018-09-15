@@ -280,7 +280,7 @@ a:hover{
   display: inline-block;
   width: 175px;
   height: 50px;
-  margin: auto; 
+  margin-top: 20px; 
   margin-left: 20px;
   border: 1px solid rgb(255, 157, 157); 
   text-decoration: none;
@@ -381,9 +381,7 @@ display:block;
   font-family: 'Dancing Script';
   font-size: 65px;
   border-top: 2px solid black;
-  font-weight: 1.5;
-  
-  
+  font-weight: 1.5; 
 }
 
 
@@ -395,17 +393,18 @@ display:block;
   padding-bottom: 60px;
   text-align: center;  
   margin-bottom: 15px;
-  margin-right: 45px;
-    
+  margin-right: 45px;    
 }
 
 .column img{  
   height: 225px;
   width: 245px;  
-  border: solid 1px rgba(216, 216, 216, 0.452);
+  
 }
+
 .column a {
   margin-left: 50px;
+  
 }
 
 .column img:hover{
@@ -414,13 +413,13 @@ display:block;
 
 .column img:first-child{
   margin-left: 0px;
-  border: solid 1px rgba(216, 216, 216, 0.452);
+  border: solid 1px rgba(17, 11, 11, 0.452);
   
 }
 
 .buttondiv {
   display: block;
-  width: 1000px;
+  width: auto;
   height: 150px;
   text-align: center;  
 }
