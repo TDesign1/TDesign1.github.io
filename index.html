@@ -17,65 +17,69 @@
 </head>
 <body>
     <header id="header">      
-      <div id="hero">  
-        <div id="bg">     
-                
-        
-        <nav>
-            <img id=logo src="images\logo.png" alt="logo">
-            <h3 id="name">ELEANOR KINAHAN</h3> 
-        <ul>          
-          <li><a href="#">CONTACT</a>
-            <ul>
-                <li><a href="#">Contact Elle</a></li>
-                <li><a href="#">Social Media</a></li>
-            </ul> 
-          </li>  
-          <li><a href="#">SHOP</a>
-            <ul>
-                <li><a href="#">Etsy</a></li>
-                <li><a href="#">Redbubble</a></li>
-            </ul>   
-            </li>             
-          <li><a href="#">SERVICES</a>
-            <ul>
-                <li><a href="#">Weddings</a></li>
-                <li><a href="#">Custom Digital Lettering</a></li>
-                <li><a href="#">Greeting Cards &amp; More</a></li>
-            </ul>
-          </li>
-          <li><a href="#">ABOUT</a>
-            <ul>
-                <li><a href="#">About Eleanor</a></li>
-                <li><a href="#">Elle's Letters</a></li>
-            </ul>
-          </li>
-          <li><a href="#">HOME</a></li>                                  
-        </ul>   
-      </nav>
-             
-        <h1 class=title>LETTERING<br> ARTIST</h1>
-        <div class="absolute"><a class="scrolldown" href="#portfolio"></a><i id="scroll" class="fas fa-chevron-down"></i></a></div>
-          
-        </div> 
-        
-         </div>    
-                    
-                
-            
-      
-     
-    </header>
+      <div id="bg">   
+     <nav>
+            <img id=logo src="/images/logo.png" alt="logo">
+            <h3 id="name">ELEANOR KINAHAN</h3>
+        <label for="drop" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a id="padlist" href="#">HOME</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">ABOUT</label>
+                    <a href="#">ABOUT</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="#">About Eleanor</a></li>
+                        <li><a href="#">Elle's Letters</a></li>                        
+                    </ul> 
 
+                </li>
+                <li>
+
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">SERVICES</label>
+                <a href="#">SERVICES</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="#">Weddings</a></li>
+                    <li><a href="#">Custom Digital Lettering</a></li>
+                    <li><a href="#">Greeting Cards &amp; More</a></li>                    
+                    </ul>  
+                </li>
+                
+                <li>
+                    <!-- Second Tier Drop Down -->        
+                    <label for="drop-3" class="toggle">SHOP</label>
+                    <a href="#">SHOP</a>         
+                    <input type="checkbox" id="drop-3"/>
+
+                    <ul>
+                        <li><a href="#">Etsy</a></li>
+                        <li><a href="#">Redbubble</a></li>                       
+                    </ul>
+                    </li>               
+                
+                <li><a id="padlist" href="#">CONTACT</a></li>
+                
+            </ul>
+            <div id="title"></div><h1 class="title">LETTERING<br> ARTIST</h1><div class="scroll1">
+            <a class="scrolldown" href="#portfolio"></a><i id="scroll" class="fas fa-chevron-down"></i></a></div></div>
+              
+        </nav>  
+        
+        
+        </div>  
+       
+     
+     </header>
     
-    <div class="break">
-      
-    
-    </div>
+    <div class="break">  </div>
   
     
     <div class="aboutbrief">
-      <p style="text-align: center; font-family: 'Raleway'; padding-top: 20px; color: #4c5871; font-weight:200; font-style:normal; font-size:50px; letter-spacing:.1em; margin-left: 15px;">ABOUT</p>
+      <h1 style="text-align:center; font-family: 'Raleway'; padding-top: 30px; color: #4c5871; font-weight:200; font-style:normal; font-size:60px; letter-spacing:.1em; margin-left: 15px;">ABOUT</h1>
         <h3 class="aboutmetitle">Elle's Letters</h3>
             <img class="logoabout" src="images/logo.jpg">        
            <p id="aboutme"> Need a better quality logo file. Here's some brief stuff all about Elle's Letters and myself and how long i've been doing this blah blah 

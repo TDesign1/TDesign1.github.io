@@ -9,52 +9,52 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family:'Karla', sans-serif;  
+  font-family:'Karla', sans-serif;    
 }
 
-body {
-  background-color: white;
-  
- }
-
- h1 {}
-
-
-
-html, body {
-     width: 100%;
+  body html {
+		margin: 0;
+	padding: 0;
+	word-wrap:break-word !important;
+	font-family:'Karla', sans-serif; 
+	width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    padding: 0; 
+    overflow-x: hidden; 
+ 
 }
 
 header {  
-  height: 590px;
-  margin-bottom: 79px;
+  height: 690px;
+  margin-bottom: 0px;
   
+}
+
+nav { 
+	margin:0;
+	padding: 0;
+  width: 100%;
+  height: 690px;
+	
 }
 
 
 #logo {
-  margin: 10px 0px 0px 20px;  
-  height: 50px;
-  width: 50px;
-  opacity: 1;
-  cursor: pointer; 
-  float: left;
+  display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 10px;
   }
-
-#logo:hover {
-   
-}
 
 #name {
   float:left;
   color: white;
   font-size: 1.5em; 
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 25px;
+  margin-left: 10px;
 }
 
 #bg{
@@ -62,109 +62,118 @@ header {
   display:block;
   z-index: -1;
   background: url("../images/header.jpg") fixed no-repeat;
-  height: 670px;  
+  height: 690px; 
   width: auto;
   background-size: cover;      
     }
-/*
-.nav {
-    float: right;
-    white-space: nowrap;
-   line-height: 1em;
-   margin-right: 12px;
-   margin-top: 25px;
-   list-style-type: none;     
+
+.menu {
+    padding-top: 20px;
 }
 
-.navlist {
-  display: inline;
+ #menu-icon {
+	display: none;
+  }
+
+label i{
+	display: none;	
+  }
+
+.toggle,
+[id^=drop] {
+	display: none;
 }
 
-.navlinks{
-    text-decoration: none;
-    color: #FCFCFC;
-    font-weight: bold;
-    font-size: 1em;
-    cursor: pointer;   
-    padding: 7px;  
-    display: inline;  
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
 }
 
-a:hover{
-    color: #92140C;    
-}
-*/
-
-nav{
-  width: 100%;
-  height: 70px;
-  background-color: rgba(250, 170, 170, 0.425); 
-  
-  
-}
-
-nav ul { 
-  padding-top: 25px;
-  margin-right: 15px;
-  padding-right: 15px;
-  float: right;
-  
-  
-}
-
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding: 10px;	
+	display: inline;
+	list-style: none;
+	position: relative;	
+	
+	}
+	
+/* Positioning the navigation items inline */
 nav ul li {
-  float: right;
-  list-style: none;  
-  position: relative;
-  
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:7px 10px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+	font-weight: bold;
+	
 }
 
-nav ul li a {
-  font-size: 17px;
-  padding:0 14px;
-  text-decoration: none; 
-  color: white;
-  display: block; 
-  
-  
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #e08283;
 }
 
-ul li a:hover {
-  color: rgb(255, 197, 197);
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	background-color: #c23f5b; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
 }
 
-nav ul li ul {
-  display: block;
-  position: absolute;
-  list-style: none;  
-  padding-top: 25px;
-   
-  
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
 }
 
-nav ul li ul li a{
-  padding: 8px 14px;
-  font-size: 13px;  }
-  
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ''; }
+li > a:only-child:after { content: ''; }
 
-nav ul li ul li a:hover{
-  cursor: pointer;
-  background-color:rgb(250, 162, 162);
-  color: black;
+#title {
+  width: 100%;
+  height: auto;
 }
-
-nav ul li ul li{
-  display: none;
-  width: 180px;
-  list-style: none; 
-  text-align:
-}
-
-ul li:hover ul li{
-  display: block;
-  background-color: rgba(253, 203, 203, 0.425); 
-}
-
 
 
 .title{  
@@ -178,25 +187,31 @@ ul li:hover ul li{
   font-weight: bold;
   font-family: Karla;
   text-shadow: 1px 1px 1px #000;
-  padding-bottom: 160px;
+  padding-bottom: 150px;
 }
- .scrolldown{  
-   color: black; 
-    }
 
- 
-
- #scroll {
-  transform: scale(1.2);
-  animation: bounce 2s infinite 2s; 
-  cursor: pointer;    
-  width: 50%;
-  font-size: 3em;  
-  color: white;      
-  float: right;  
-  clear: left;
-  padding-left: 30%;
+ .scroll1 {
+   width: 50%;
  }
+
+   .scrolldown {
+   height: 50px;
+ } 
+
+ .scrolldown a:hover {
+  background-color: transparent;
+  color: white;
+  width: 50%;  
+ } 
+
+#scroll {
+  cursor: pointer;  
+  font-size: 4em;  
+  color: white;
+  float: right;   
+  clear: left; 
+  height: 50px;   
+   }
 
 
 
@@ -224,7 +239,7 @@ ul li:hover ul li{
   transform: scale(1.4);
 
 }
-*/
+
 @keyframes bounce {
   0%,
   100%,
@@ -274,8 +289,7 @@ ul li:hover ul li{
 */
 
 .aboutbrief {
- height: auto;
- 
+ height: auto; 
  background-color: white;
  padding-bottom: 30px;
  border-bottom: 2px solid black;
@@ -675,6 +689,199 @@ footer{
 }
 
 
+/* MEDIA QUERIES*/
+
+@media all and (max-width : 768px) {
+
+ 
+
+	#logo {
+		display: none;
+			
+	}
+
+	nav {
+		margin: 0;
+		background-color: transparent;
+		position: absolute;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	.menu-icon {
+		float: right;
+		display:inline;		
+		color: white;	
+		font-size: 40px;
+		margin-top: 25px;
+		margin-right: 15px;	
+	}
+
+	#name {
+    float: left;
+		display: block;
+		font-size: 1.8em;
+		margin-top: 30px;
+		margin-left: 18px;
+	}
+
+	
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;		
+		padding:14px 25px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+		font-weight: bold;
+		
+	}
+
+	.toggle:hover {
+		background-color: #4b0d0d;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	#padlist {
+		padding-left: 25px;
+	}
+
+	nav ul {
+		margin-top: 0px;
+		z-index: 3;
+		background-color: #f86e6ed5; 
+		
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 50px;
+		
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #4e121270;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+			}
+    
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+		
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		background-color: #212121; 
+		
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+		
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;		
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+		
+	}
+
+  #title {
+    position: absolute;
+    
+  }
+
+	.title{  
+    position: fixed;
+    font-size: 50px;    
+		line-height: 1.1;		
+		color:#FCFCFC;
+		font-weight: bold;
+		font-family: Karla;
+    text-shadow: 1px 1px 1px #000;	
+    margin-top: 85%;
+    margin-bottom: 50%;
+    float: left;
+    margin-left: 15px;
+	  }
+
+	  #bg{
+  
+		display:block;
+		z-index: -1;
+		height: 790px;  
+		background-size: cover;	
+		background-position: 70% 50%;    
+     }
+      
+     #scroll {
+        display: none;
+        transform: scale(1.2);
+        animation: bounce 2s infinite 2s; 
+        cursor: pointer;    
+        width: 50%;
+        font-size: 3em;  
+        color: white;      
+        float: right;  
+        clear: left;
+        padding-left: 30%;
+       }
+      
+
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+
+}
 
 
 
