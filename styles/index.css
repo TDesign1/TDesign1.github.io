@@ -791,7 +791,7 @@ footer{
 	}
 
 	.toggle:hover {
-		background-color: #4b0d0d;
+		background-color: #b15757;
 	}
 
 	/* Display Dropdown when clicked on Parent Lable */
@@ -842,7 +842,7 @@ footer{
     
 	nav ul li ul li .toggle,
 	nav ul ul a {
-		background-color: #212121; 
+		background-color: #802727; 
 		
 	}
 
@@ -851,7 +851,7 @@ footer{
 		float: none;
 		position:static;
 		color: #ffffff;
-		background-color: #212121; 
+		background-color: #802727;
 		
 		/* has to be the same number as the "line-height" of "nav a" */
 	}
