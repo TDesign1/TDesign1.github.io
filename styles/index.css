@@ -195,8 +195,12 @@ li > a:only-child:after { content: ''; }
  }
 
    .scrolldown {
-   height: 50px;
+   height: 0px;
+   width: 0px;
  } 
+
+ .scrolldown a {  
+ }
 
  .scrolldown a:hover {
   background-color: transparent;
@@ -297,6 +301,17 @@ li > a:only-child:after { content: ''; }
  
   }
 
+.aboutmaintitle  {
+text-align:center; 
+font-family: 'Raleway'; 
+padding-top: 30px; 
+color: #4c5871; 
+font-weight:200; font-style:normal;
+ font-size:60px;
+  letter-spacing:.1em; 
+  margin-left: 15px;"
+}
+
 .aboutmetitle {
   margin-right: 120px;
   padding-top: 60px;
@@ -321,6 +336,8 @@ li > a:only-child:after { content: ''; }
   letter-spacing: .1em;
   line-height: 1.2em;
   font-family: 'Dancing Script';
+  text-align: left; 
+  margin-left: 68px;
 }
 
 #aboutme{
@@ -441,13 +458,23 @@ li > a:only-child:after { content: ''; }
  
 }
 
+.gallery p {
+  font-size: 18px; 
+  font-family: 'Open Sans'; 
+  text-align: center; 
+  line-height: 1.5; 
+  color: rgb(53, 53, 53);"
+  margin: 0 15px 0 15px;
+  padding: 10px;
+}
+
 .gallery img{
   width: 280px;
   height: 250px;
   padding: 0px;
   transition: 0.2s;
   transform: scale(0.7);
-  margin: auto;
+  margin:0px
   border: solid 1px black;
 }
 
@@ -484,6 +511,15 @@ display:block;
   border-top: 2px solid black;
   font-weight: 1.5; 
 }
+
+.services p{
+  padding-bottom: 35px; 
+  font-size: 16px;
+  font-family: 'Open Sans';
+  text-align: center;
+  line-height: 2;
+  color: rgb(53, 53, 53);"
+  }
 
 
 
@@ -841,6 +877,8 @@ footer{
 
   #title {
     position: relative;
+    margin: 0px;
+    padding: 0px;
     
   }
 
@@ -852,9 +890,8 @@ footer{
 		font-weight: bold;
 		font-family: Karla;
     text-shadow: 1px 1px 1px #000;	
-    margin-top: 60%;
-    
-    float: left;
+    margin-top: 250px;    
+    float: none;
     margin-left: 15px;
 	  }
 
@@ -867,27 +904,63 @@ footer{
 		background-position: 70% 50%;    
      }
       
-     #scroll {
-        display: none;
-        transform: scale(1.2);
-        animation: bounce 2s infinite 2s; 
-        cursor: pointer;    
-        width: 50%;
-        font-size: 3em;  
-        color: white;      
-        float: right;  
-        clear: left;
-        padding-left: 30%;
-       }
+     .scroll1 {
+       display: block;
+      margin-left: 42%;
+      margin-right: 50%;
+      width: 50%;
+      height: auto;
+      position: absolute;     
+      padding: 0px;
+      margin-top: 500px;
+      float: none;
+      
+    }   
+
+    .scrolldown {
+      padding: 0px;
+      float: none;      
+          } 
+   
+    .scrolldown a:hover {
+     background-color: transparent;
+     color: white;
+     
+     
+    } 
+   
+   #scroll {
+     cursor: pointer;  
+     font-size: 4em;  
+     color: white;         
+     height: auto; 
+     margin: 0px;          
+     padding: 0px;
+     float: none;
+      
+      }
+
+
+ .aboutmaintitle  {
+  text-align:center; 
+        font-family: 'Raleway'; 
+        padding-top: 15px; 
+        padding-left: 15px;
+      color: #4c5871; 
+        font-weight:200; font-style:normal;
+      font-size:60px;
+      letter-spacing:.1em; 
+      margin-left: 0px;
+        }
 
        .aboutbrief {
         height: auto; 
         background-color: white;
-        padding-bottom: 30px;
+        
         border-bottom: 0px solid black;
-        margin: 0;
-        padding: 0px;
-        width: 100%; 
+        margin: 0px;
+        padding: 20px 0px 40px 0;
+        width: auto; 
       
       }
         
@@ -895,6 +968,8 @@ footer{
        .aboutmetitle {
         display: none;
       }
+
+      
 
       .logoabout{
         display: block;
@@ -912,16 +987,18 @@ footer{
         display: block;
         height: auto;  
         padding:0px;
-        margin: 0 15px 0 15px;        
+        margin: 0px;
         text-align: center;
-        width: 100%; 
+        margin: 0 15px;
+        
       }
         
         .aboutmetitle2 {
           margin: 0px;
-          padding: 0px;           
-          text-align: center;
-          width: 100%; 
+          padding:25px 0px;  
+          padding-top: 40px;                 
+          text-align: center; 
+          font-size: 45px;    
           
         }
 
@@ -957,28 +1034,36 @@ footer{
           }
 
           .services {
-            background-color: white;
-            margin: 0px 5px 0 5px;
-            border-bottom: 2px solid black;
+             margin: 0px 5px 0 5px;
+            border-bottom: none;
           }
           
           .servicestitle {
-            padding: 30px;            
+             
+            font-size: 60px;     
+            margin: 0px;                 
+            padding: 30px 15px;
           }
+
+          .services p{
+            margin: 0 15px 0 15px;
+            }
+          
 
           .column {  
             flex: 33%; 
             max-width: 100%;
             padding: 0 0px;
-            padding-bottom: 40px;
+            padding-bottom: 10px;
             text-align: center;  
             margin-bottom: 15px;
             margin-right: 45px;    
           }
           
           .column img{  
-            height: 225px;
-            width: 245px;  
+            height: 210px;
+            width: 230px;  
+            margin-bottom: 15px;
             
           }
           
@@ -1000,8 +1085,9 @@ footer{
           .buttondiv {
             display: block;
             width: auto;
-            height: 150px;
+            height: 115px;
             text-align: center;  
+                      
           }
           
           .infobutton { 
@@ -1019,11 +1105,11 @@ footer{
             }
           
             .contactbutton { 
-              text-align: center;
               width: 180px;
               margin-left: 30px;
               height: 50px;
-              line-height: 50px;              
+              line-height: 50px;   
+              font-size: 20px;           
               }
           
               .contactbutton:hover {
@@ -1037,12 +1123,47 @@ footer{
           
 }
 
-@media all and (max-width : 330px) {
+@media all and (max-width : 450px) {
 
 	nav ul li {
 		display:block;
 		width: 94%;
-	}
+  }
+  
+  .gallery img{
+    width: 170px;
+    height: 150px;
+    padding: 0px;
+    margin: -10px;    
+  }
+
+  .infobutton { 
+    width: 140px;
+   height: 70px;            
+   line-height: 70px;
+   font-size: 18px;
+   border-radius: 5px;
+  
+   }
+ 
+   .infobutton:hover {
+   background-color: rgb(255, 157, 157);
+   color: black;
+   }
+ 
+   .contactbutton { 
+     text-align: center;
+     width: 140px;
+     margin-left: 30px;
+     font-size: 18px;
+     height: 70px;
+     line-height: 70px;              
+     }
+ 
+     .contactbutton:hover {
+       background-color: rgb(255, 157, 157);
+       color: black;
+       }
 
 
 }
