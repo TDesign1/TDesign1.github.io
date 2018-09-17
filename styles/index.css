@@ -26,7 +26,7 @@
 }
 
 header {  
-  height: 690px;
+  height: auto;
   margin-bottom: 0px;
   
 }
@@ -310,6 +310,19 @@ li > a:only-child:after { content: ''; }
   font-family: 'Dancing Script';
 }
 
+.aboutmetitle2 {
+  margin-right: 120px;
+  padding-top: 60px;
+  color: rgb(252, 90, 90);  
+  text-align: end; 
+  font-weight: 200;
+  font-style: normal;
+  font-size: 50px;
+  letter-spacing: .1em;
+  line-height: 1.2em;
+  font-family: 'Dancing Script';
+}
+
 #aboutme{
   display: block;
   text-align: right;
@@ -451,8 +464,6 @@ display:block;
   z-index: -1;
   height: 390px;
   background-size: cover;
-  
-  
 }
 
 /*services*/
@@ -829,20 +840,20 @@ footer{
 	}
 
   #title {
-    position: absolute;
+    position: relative;
     
   }
 
 	.title{  
-    position: fixed;
+    position: absolute;
     font-size: 50px;    
 		line-height: 1.1;		
 		color:#FCFCFC;
 		font-weight: bold;
 		font-family: Karla;
     text-shadow: 1px 1px 1px #000;	
-    margin-top: 85%;
-    margin-bottom: 50%;
+    margin-top: 60%;
+    
     float: left;
     margin-left: 15px;
 	  }
@@ -868,9 +879,162 @@ footer{
         clear: left;
         padding-left: 30%;
        }
+
+       .aboutbrief {
+        height: auto; 
+        background-color: white;
+        padding-bottom: 30px;
+        border-bottom: 0px solid black;
+        margin: 0;
+        padding: 0px;
+        width: 100%; 
       
+      }
+        
 
+       .aboutmetitle {
+        display: none;
+      }
 
+      .logoabout{
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;        
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+         
+      }
+
+      #aboutme{
+        display: block;
+        height: auto;  
+        padding:0px;
+        margin: 0 15px 0 15px;        
+        text-align: center;
+        width: 100%; 
+      }
+        
+        .aboutmetitle2 {
+          margin: 0px;
+          padding: 0px;           
+          text-align: center;
+          width: 100%; 
+          
+        }
+
+        #aboutme2 {
+          text-align:center;          
+          padding: 0px;  
+          padding-bottom: 20px;       
+          margin: 0;  
+          margin: 0 15px 0 15px; 
+          width: auto;                  
+        }
+        .captivate {
+
+          display: none;}
+
+          .gallery img{
+            width: 200px;
+            height: 170px;
+            padding: 0px;
+            
+          }
+
+          .gallery {
+            padding-top: 15px;          
+            margin: 0 5px 0 5px;
+            border-top: 2px solid black;
+            padding-bottom: 25px;
+            border-bottom: 2px solid black;           
+          }
+
+          .calligraphy {
+            display: none;
+          }
+
+          .services {
+            background-color: white;
+            margin: 0px 5px 0 5px;
+            border-bottom: 2px solid black;
+          }
+          
+          .servicestitle {
+            padding: 30px;            
+          }
+
+          .column {  
+            flex: 33%; 
+            max-width: 100%;
+            padding: 0 0px;
+            padding-bottom: 40px;
+            text-align: center;  
+            margin-bottom: 15px;
+            margin-right: 45px;    
+          }
+          
+          .column img{  
+            height: 225px;
+            width: 245px;  
+            
+          }
+          
+          .column a {
+            margin-left: 50px;
+            
+          }
+          
+          .column img:hover{
+            transform: none;
+          }
+          
+          .column img:first-child{
+            margin-left: 0px;
+            border: solid 1px rgba(17, 11, 11, 0.452);
+            
+          }
+          
+          .buttondiv {
+            display: block;
+            width: auto;
+            height: 150px;
+            text-align: center;  
+          }
+          
+          .infobutton { 
+             width: 180px;
+            height: 50px;            
+            line-height: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+           
+            }
+          
+            .infobutton:hover {
+            background-color: rgb(255, 157, 157);
+            color: black;
+            }
+          
+            .contactbutton { 
+              text-align: center;
+              width: 180px;
+              margin-left: 30px;
+              height: 50px;
+              line-height: 50px;              
+              }
+          
+              .contactbutton:hover {
+                background-color: rgb(255, 157, 157);
+                color: black;
+                }
+
+                .ipadbg {   
+                  display: none;  
+              }
+          
 }
 
 @media all and (max-width : 330px) {
